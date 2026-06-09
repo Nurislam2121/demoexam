@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль - Cinema App</title>
+    <link rel="stylesheet" href="static/global.css">
+    <link rel="stylesheet" href="static/profile.css">
+</head>
+<body>
+    <header>
+        <nav class="navigate">
+            <ul class="nav-link">
+                <li><a href="movies.html">Фильмы</a></li>
+                <li><a href="profile.html">Профиль</a></li>
+                <li id="authLink"><a href="login.html">Выйти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="profile-container">
+        <div class="user-profile">
+            <img src="../static/images/default-avatar.jpg" alt="Avatar" class="user-avatar" id="avatarImg">
+            <div class="user-data">
+                <h2 class="profileName" id="profileName">Nurislam Mivanchin</h2>
+                <p class="profileUserName" id="profileUserName">nurislam@gmail.com</p>
+                <label for="avatar-upload" class="base-btn upload-btn">Сменить аватар</label>
+                <input type="file" id="avatar-upload" hidden>
+            </div>
+        </div>
+
+        <section class="ticket-history">
+            <h1>История покупки билетов</h1>
+            <div class="history-grid" id="history-grid">    
+                
+                <!-- <div class="history-card">
+                    <img src="../static/images/movie5.jpg" alt="Barbie" class="history-poster">
+                    <div class="history-info">
+                        <h2 class="movie-name">Barbie</h2>
+                        <div class="movie-meta">
+                            <span class="tag">Комедия</span>
+                            <span class="tag">12+</span>
+                        </div>
+                        <p class="history-date">Дата сеанса: <strong>21.05.2026</strong></p>
+                        <p>Билетов: <strong>3 шт.</strong></p>
+                        <p class="total-price">Итого: 7500 ₸</p>
+                        <p class="status status-active">Статус: Активен</p>
+                        <button class="refund-btn">Вернуть билет</button>
+                    </div>
+                </div> -->
+
+            </div>
+        </section>
+    </main>
+
+    <script src="js/profile.js"></script>
+</body>
+</html>

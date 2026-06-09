@@ -1,0 +1,119 @@
+header {
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.nav-link {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: var(--dark-text);
+    font-weight: bold;
+}
+
+/* Секция фильтров */
+.filter-section {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+select {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+/* Сетка карточек */
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 20px; /* Уменьши отступы для мобильных или используй адекватные значения */
+}
+
+/* Карточка фильма */
+.movie-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 15px;
+    border: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: transform 0.2s;
+}
+
+.movie-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.movie-poster {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.movieName {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.movie-info {
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.movie-info span {
+    background: #f0f0f0;
+    padding: 2px 8px;
+    border-radius: 5px;
+}
+
+.moivePrice {
+    font-weight: bold;
+    color: var(--main-color);
+    font-size: 1.1rem;
+}
+
+/* Форма покупки внутри карточки */
+.movie-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: auto; /* Прижимает форму к низу */
+}
+
+.movie-card input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.butBtn {
+    margin-top: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="static/global.css" />
+    <link rel="stylesheet" href="static/movies.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navigate">
+        <ul class="nav-link">
+          <li><a href="movies.html">Фильмы</a></li>
+          <li><a href="profile.html">Профиль</a></li>
+          <li id="authLink"><a href="login.html">Вход</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Список фильмов</h1>
+
+      <div class="filter-section">
+        <select id="genre">
+          <option value="">Все жанры</option>
+          <option value="1">Экшен</option>
+          <option value="2">Комедия</option>
+          <option value="3">Драма</option>
+        </select>
+
+        <select id="yearsRating">
+          <option value="">Любой рейтинг</option>
+          <option value="6">6+</option>
+          <option value="12">12+</option>
+          <option value="16">16+</option>
+          <option value="18">18+</option>
+        </select>
+        <select id="sortPrice">
+          <option value="asc">Сначала дешевые</option>
+          <option value="desc">Сначала дорогие</option>
+        </select>
+      </div>
+
+      <div id="moviesList" class="movies-grid">
+        <!-- <div class="movie-card">
+          <img
+            src="../static/images/movie1.jpg"
+            alt="Dune"
+            class="movie-poster"
+          />
+
+          <div class="movie-content">
+            <h2 class="movie-title">Дюна: Часть вторая</h2>
+
+            <div class="movie-tags">
+              <span class="tag genre">Фантастика</span>
+              <span class="tag rating">16+</span>
+            </div>
+
+            <p class="movie-price">Цена: <span>2500</span> ₸</p>
+
+            <form class="purchase-form">
+              <div class="form-group">
+                <label>Дата сеанса:</label>
+                <input
+                  type="date"
+                  name="show_date"
+                  required
+                  class="input-date"
+                />
+              </div>
+
+              <div class="form-group">
+                <label>Количество билетов:</label>
+                <input
+                  type="number"
+                  name="quantity"
+                  min="1"
+                  value="1"
+                  required
+                  class="input-quantity"
+                />
+              </div>
+
+              <button type="submit" class="buy-btn base-btn">
+                Купить билет
+              </button>
+            </form>
+          </div>
+        </div> -->
+      </div>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

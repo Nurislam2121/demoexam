@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="static/global.css" />
+    <link rel="stylesheet" href="static/login.css" />
+  </head>
+  <body>
+    <main class="login-page">
+      <h1>Логин</h1>
+      <form id="loginForm" class="login-form form-container">
+        <label for="username">Username</label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Введите имя пользователя"
+          required
+        />
+
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Введите пароль"
+          required
+        />
+        
+        <button type="submit" class="login-btn base-btn">Login</button>
+        <p>Нет аккаунта? <a href="register.html">Регистрироваться</a></p>
+      </form>
+    </main>
+
+    <script src="js/login.js"></script>
+  </body>
+</html>

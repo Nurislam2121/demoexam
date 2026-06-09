@@ -1,0 +1,81 @@
+body {
+    --bg-color: #fff1f1;
+    --main-color: #287eff;
+    --dark-text: #000;
+    --white-text: #fff;
+    background-color: var(--bg-color);  
+    min-height: 100vh;      
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace; 
+}
+
+header {
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.nav-link {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: var(--dark-text);
+    font-weight: bold;
+}
+
+.register-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 40px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.base-btn {
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--main-color);
+    color: var(--white-text);
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.base-btn {
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.base-btn:hover {
+    opacity: 0.8;
+}
+
+input {
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #a3a0a0;
+}
